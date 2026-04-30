@@ -10,12 +10,11 @@ horizontal: false
 display_categories: [electives, foundations, core]
 ---
 
-I've taught across the curriculum--from upper-level electives in legal and forensic topics to foundational courses for the psychology major to 1st-year social scientific inquiry courses in Flagler's Core Experience (general education program).
+I've taught across the curriculum--from upper-level electives in legal and forensic topics to foundational courses for the psychology major to 1st-year social scientific inquiry courses in Flagler[...]
 
 Below are brief snapshots of several courses in my regular rotation, including sample objectives, resources, and learning activities.
 
-If you’d like more information about a specific course or potential collaboration, please feel free to contact me.
-
+If you'd like more information about a specific course or potential collaboration, please feel free to contact me.
 
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}

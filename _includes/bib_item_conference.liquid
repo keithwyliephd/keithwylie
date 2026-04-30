@@ -1,17 +1,17 @@
 {%- comment -%}
 Fresh conference template:
 • removes italics from the default reference
-• removes the “In …” container line entirely
+• removes the "In …" container line entirely
 • prints a plain conference line: Conference Name, Mon YYYY
 {%- endcomment -%}
 
 {%- assign ref = reference -%}
 {%- comment -%} strip any emphasis tags the APA renderer added {%- endcomment -%}
-{%- assign ref = ref 
+{%- assign ref = ref
   | replace: '<em>', '' | replace: '</em>', ''
   | replace: '<i>', ''  | replace: '</i>', '' -%}
 
-{%- comment -%} keep everything before the “ In ” container bit {%- endcomment -%}
+{%- comment -%} keep everything before the " In " container bit {%- endcomment -%}
 {%- assign main = ref | split: ' In ' | first -%}
 
 <li class="csl-entry">
@@ -23,7 +23,7 @@ Fresh conference template:
 
   {%- if conf != '' -%}
     <div class="kv-venue" style="font-style: normal;">
-      {{ conf }}{%- if mo != '' or yr != '' -%}, 
+      {{ conf }}{%- if mo != '' or yr != '' -%},
         {%- if mo != '' -%}{{ mo | slice: 0, 3 }}{%- endif -%}
         {%- if yr != '' -%} {{ yr }}{%- endif -%}
       {%- endif -%}

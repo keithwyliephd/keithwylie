@@ -6,6 +6,7 @@ description: conference papers, posters, and invited talks
 nav: true
 nav_order: 4
 ---
+
 {% include bib_search.liquid %}
 
 <div class="publications">
